@@ -24,4 +24,4 @@ function currentLine(katzDeliLine) {
         return (`The line is currently: ${newArray.join(', ')}`) }
       else {
         return ("The line is currently empty.") }
-} }
+} } 
