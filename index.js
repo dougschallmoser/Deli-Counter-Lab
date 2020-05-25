@@ -1,3 +1,4 @@
+// Declare deli line array
 var katzDeliLine = [];
 
 // Part 1: Build a function called takeANumber
