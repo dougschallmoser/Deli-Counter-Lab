@@ -18,10 +18,10 @@ function nowServing(katzDeliLine) {
 // Part 3: Build a function called currentLine
 function currentLine(katzDeliLine) {
   var newArray = [];
-  var apple = []; {
+  var placement = []; {
   for (let i = 0; i < katzDeliLine.length; i++) {
-    apple = ((i + 1) + '. ' + katzDeliLine[i]);
-    newArray.push(apple); }
+    placement = ((i + 1) + '. ' + katzDeliLine[i]);
+    newArray.push(placement); }
       if (katzDeliLine.length > 0) {
         return (`The line is currently: ${newArray.join(', ')}`) }
       else {
