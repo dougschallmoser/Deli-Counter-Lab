@@ -6,22 +6,31 @@ function takeANumber(katzDeliLine, name) {
   return (`Welcome, ${name}. You are number ${place} in line.`)
 }
 
+
 // Part 2: Build a function called nowServing
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length > 0) {
     return (`Currently serving ${katzDeliLine.shift()}.`);
-  } else {
+  }
+
+  else {
     return ("There is nobody waiting to be served!")
   }
 }
 
+
 // Part 3: Build a function called currentLine
 function currentLine(katzDeliLine) {
-  var newArray = []; {
+  var newArray = [];
   for (let i = 0; i < katzDeliLine.length; i++) {
-    newArray.push((i + 1) + '. ' + katzDeliLine[i]); }
-      if (katzDeliLine.length > 0) {
-        return (`The line is currently: ${newArray.join(', ')}`) }
+    newArray.push((i + 1) + '. ' + katzDeliLine[i]);
+  }
+
+    if (katzDeliLine.length > 0) {
+      return (`The line is currently: ${newArray.join(', ')}`)
+    }
+
       else {
-        return ("The line is currently empty.") }
-} } 
+        return ("The line is currently empty.")
+      }
+}
